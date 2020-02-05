@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+<EditText
+    android:id="@+id/et_username"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center"
+    android:hint="Enter Username"/>
+
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_below="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:hint="Enter Username"/>
+
+    <Button
+        android:id="@+id/btn_authenticate"
+        android:layout_below="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/btn_authenticate" />
+    <TextView
+        android:id="@+id/tv_fingerprint"
+        android:layout_below="@+id/btn_authenticate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:text="Fingerprint?"/>
+
+</RelativeLayout>
